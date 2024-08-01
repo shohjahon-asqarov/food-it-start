@@ -1,9 +1,10 @@
 import React from 'react'
+import Servies from './components/Servies'
 
 const App = () => {
   return (
     <div>
-      <button className='btn-green'>Order Now</button>
+      <Servies />
     </div>
   )
 }
