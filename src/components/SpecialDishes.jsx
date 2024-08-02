@@ -41,7 +41,7 @@ const SpecialDishes = () => {
                         <button className='bg-grey-100 hover:bg-green-300 p-5 flex items-center justify-center rotate-180'><img  src={Left} alt="arrow_left" /></button>
                     </div>
                 </div>
-                <ul className='grid grid-cols-3 gap-10 items-center'>
+                <ul className='grid grid-cols-3 gap-10 items-center mt-16'>
                 {data.map(id => {
                         return(
                                 <li className='shadow-servise-card rounded-[40px] p-9 space-y-3 max-w-[446px]'>
