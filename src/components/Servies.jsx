@@ -38,10 +38,10 @@ const Servies = () => {
             {/* card right */}
             <div className='space-y-2'>
                 <ul className='grid grid-cols-1 md:grid-cols-2 gap-8 text-center'>
-                    {data.map(i => {
+                    {data.map((i) => {
                         return(
                             <li className='servise-card rounded-xl py-6'>
-                                <img className='mx-auto' src={i.img} alt="" />
+                                <img className='mx-auto' src={i.img} alt={i.title} />
                                 <p className='text-green-200'>{i.title}</p>
                                 <p className='text-green-300 md:text-xl'>{i.description}</p>
                             </li>
@@ -50,10 +50,10 @@ const Servies = () => {
                     }
                 </ul>
                 <ul className='grid grid-cols-1 md:grid-cols-2 gap-8 text-center'>
-                    {data2.map(i => {
+                    {data2.map((i) => {
                         return(
                             <li className='servise-card rounded-xl py-6'>
-                                <img className='mx-auto' src={i.img} alt="" />
+                                <img className='mx-auto' src={i.img} alt={i.title} />
                                 <p className='text-green-200'>{i.title}</p>
                                 <p className='text-green-300 md:text-xl'>{i.description}</p>
                             </li>

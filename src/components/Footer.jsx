@@ -56,10 +56,10 @@ const Footer = () => {
                 {/* cta */}
                 <div className='flex items-center mt-24 space-x-44 '>
                     <div className='grid grid-cols-4 lg:grid-cols-4 gap-2'>
-                        <img className='rounded-full bg-[#EDFFEF] py-3 md:py-5 hover:bg-green-300 cursor-pointer px-2 md:px-5' src={Facebook} alt="" />
-                        <img className='rounded-full bg-[#EDFFEF] py-3 md:py-5 hover:bg-green-300 cursor-pointer px-2 md:px-5' src={Instagram} alt="" />
-                        <img className='rounded-full bg-[#EDFFEF] py-3 md:py-5 hover:bg-green-300 cursor-pointer px-2 md:px-5' src={Twich} alt="" />
-                        <img className='rounded-full bg-[#EDFFEF] py-3 md:py-5 hover:bg-green-300 cursor-pointer px-2 md:px-5' src={YouTube} alt="" />
+                        <img className='rounded-full bg-[#EDFFEF] py-3 md:py-5 hover:bg-green-300 cursor-pointer px-2 md:px-4' src={Facebook} alt="img" />
+                        <img className='rounded-full bg-[#EDFFEF] py-3 md:py-5 hover:bg-green-300 cursor-pointer px-2 md:px-4' src={Instagram} alt="img" />
+                        <img className='rounded-full bg-[#EDFFEF] py-3 md:py-5 hover:bg-green-300 cursor-pointer px-2 md:px-4' src={Twich} alt="img" />
+                        <img className='rounded-full bg-[#EDFFEF] py-3 md:py-5 hover:bg-green-300 cursor-pointer px-2 md:px-4' src={YouTube} alt="img" />
                     </div>
                     <div>
                         <p className='text-grey-200 hidden md:block lg:block'>Copyright 2023 Dscode | All rights reserved</p>
