@@ -37,8 +37,8 @@ const SpecialDishes = () => {
                         <h2 className='leading-[50px]'>Standout Dishes <br /> From Our Menu</h2>
                     </div>
                     <div className='flex space-x-8 items-end'>
-                        <button className='icon-btn-sm'><img src={Left} alt="arrow_left" /></button>
-                        <button className='icon-btn-sm rotate-180'><img src={Left} alt="arrow_left" /></button>
+                        <button className='icon-btn-md'><img src={Left} alt="arrow_left" /></button>
+                        <button className='icon-btn-md rotate-180'><img src={Left} alt="arrow_left" /></button>
                     </div>
                 </div>
                 <ul className='grid grid-cols-3 gap-10 items-center mt-16'>

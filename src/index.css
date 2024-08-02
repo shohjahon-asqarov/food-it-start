@@ -36,7 +36,10 @@ html {
   }
 
   button {
-    @apply rounded-full
+    @apply rounded-full ;
+  }
+  a {
+@apply transition-all duration-300;
   }
 }
 
@@ -47,11 +50,11 @@ html {
   }
 
   .icon-btn-sm {
-    @apply w-14 h-14 bg-grey-100 hover:bg-green-300 text-[#EDFFEF] flex justify-center items-center;
+    @apply w-14 h-14 hover:bg-green-300 bg-[#EDFFEF] flex justify-center items-center rounded-full;
   }
 
   .icon-btn-md {
-    @apply w-20 h-20 bg-white flex justify-center items-center shadow-btn;
+    @apply w-20 h-20 bg-grey-100 hover:bg-green-300 flex justify-center items-center shadow-btn;
   }
 }
 
