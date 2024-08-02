@@ -20,15 +20,15 @@ html {
 /* base */
 @layer base {
   h1 {
-    @apply text-6xl font-extrabold;
+    @apply text-2xl md:text-3xl lg:text-6xl font-extrabold;
   }
 
   h2 {
-    @apply text-5xl font-bold;
+    @apply text-xl md:text-2xl lg:text-5xl font-bold;
   }
 
   h3 {
-    @apply text-3xl font-semibold;
+    @apply text-lg lg:text-3xl font-semibold;
   }
 
   p {

@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { EggVegi, Fattoush, Left, Star, Vegetable } from '../assets/data'
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 const SpecialDishes = () => {
+
+
     const data = [
         {
             id: 1,
@@ -26,8 +30,43 @@ const SpecialDishes = () => {
             description: 'Description of the item',
             price: '$23.00',
             raiting: '4.5'
+        },
+        {
+            id: 4,
+            img: Fattoush,
+            title: 'Fattoush salad',
+            description: 'Description of the item',
+            price: '$24.00',
+            raiting: '4.9'
+        },
+        {
+            id: 5,
+            img: Vegetable,
+            title: 'Vegetable  salad',
+            description: 'Description of the item',
+            price: '$26.00',
+            raiting: '4.6'
+        },
+        {
+            id: 6,
+            img: EggVegi,
+            title: 'Egg vegi salad',
+            description: 'Description of the item',
+            price: '$23.00',
+            raiting: '4.5'
         }
     ]
+
+
+
+    const [custom_swiper, set_swiper] = useState({});
+    const nextSlide = () => {
+        custom_swiper.slideNext();
+    };
+    const prevSlide = () => {
+        custom_swiper.slidePrev();
+    };
+
     return (
         <section>
             <div className="container">
@@ -37,23 +76,43 @@ const SpecialDishes = () => {
                         <h2 className='leading-[50px]'>Standout Dishes <br /> From Our Menu</h2>
                     </div>
                     <div className='flex space-x-8 items-end'>
-                        <button className='icon-btn-md'><img src={Left} alt="arrow_left" /></button>
-                        <button className='icon-btn-md rotate-180'><img src={Left} alt="arrow_left" /></button>
+                        <button onClick={prevSlide} className='icon-btn-md'><img src={Left} alt="arrow_left" /></button>
+                        <button onClick={nextSlide} className='icon-btn-md rotate-180'><img src={Left} alt="arrow_left" /></button>
                     </div>
                 </div>
-                <ul className='grid grid-cols-3 gap-10 items-center mt-16'>
+
+
+                <Swiper className='pt-16 pb-10'
+                    spaceBetween={30}
+                    slidesPerView={1}
+                    onInit={(ev) => {
+                        set_swiper(ev);
+                    }}
+
+                    breakpoints={{
+                        // when window width is >= 640px
+                        640: {
+                            slidesPerView: 2,
+                        },
+                        // when window width is >= 768px
+                        1000: {
+                            slidesPerView: 3,
+                        },
+                    }}
+
+                >
                     {data.map((product, index) => {
                         return (
-                            <li key={index} className='shadow-servise-card rounded-[40px] p-9 space-y-3 max-w-[446px]'>
-                                <img className='mx-auto max-w-[276px]' src={product.img} alt="" />
+                            <SwiperSlide key={index} className='shadow-servise-card rounded-[40px] p-9 space-y-3'>
+                                <img className='mx-auto' src={product.img} alt="" />
                                 <h3>{product.title}</h3>
                                 <p className='text-grey-200'>{product.description}</p>
                                 <div className='flex justify-between items-center' ><p>{product.price}</p> <span className='flex gap-2'><img src={Star} alt="" /><b>{product.raiting}</b></span></div>
-                            </li>
+                            </SwiperSlide>
                         )
                     })
                     }
-                </ul>
+                </Swiper>
 
             </div>
         </section>
