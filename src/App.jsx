@@ -1,10 +1,16 @@
 import React from 'react'
 import SpecialDishes from './components/SpecialDishes'
+import Testimonials from './components/Testimonials'
+import Servies from './components/Servies'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
-    <div>
-      <button className='btn-green'>Order Now</button>
+    <div className='space-y-32'>
+      <SpecialDishes />
+      <Testimonials />
+      <Servies />
+      <Footer />
     </div>
   )
 }

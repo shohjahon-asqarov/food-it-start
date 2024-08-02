@@ -7,7 +7,7 @@ const SpecialDishes = () => {
             id: 1,
             img: Fattoush,
             title: 'Fattoush salad',
-            description:'Description of the item',
+            description: 'Description of the item',
             price: '$24.00',
             raiting: '4.9'
         },
@@ -15,7 +15,7 @@ const SpecialDishes = () => {
             id: 2,
             img: Vegetable,
             title: 'Vegetable  salad',
-            description:'Description of the item',
+            description: 'Description of the item',
             price: '$26.00',
             raiting: '4.6'
         },
@@ -23,7 +23,7 @@ const SpecialDishes = () => {
             id: 3,
             img: EggVegi,
             title: 'Egg vegi salad',
-            description:'Description of the item',
+            description: 'Description of the item',
             price: '$23.00',
             raiting: '4.5'
         }
@@ -37,22 +37,22 @@ const SpecialDishes = () => {
                         <h2 className='leading-[50px]'>Standout Dishes <br /> From Our Menu</h2>
                     </div>
                     <div className='flex space-x-8 items-end'>
-                        <button className='bg-grey-100 hover:bg-green-300 p-5 flex items-center justify-center'><img  src={Left} alt="arrow_left" /></button>
-                        <button className='bg-grey-100 hover:bg-green-300 p-5 flex items-center justify-center rotate-180'><img  src={Left} alt="arrow_left" /></button>
+                        <button className='icon-btn-sm'><img src={Left} alt="arrow_left" /></button>
+                        <button className='icon-btn-sm rotate-180'><img src={Left} alt="arrow_left" /></button>
                     </div>
                 </div>
                 <ul className='grid grid-cols-3 gap-10 items-center mt-16'>
-                {data.map(id => {
-                        return(
-                                <li className='shadow-servise-card rounded-[40px] p-9 space-y-3 max-w-[446px]'>
-                                <img className='mx-auto max-w-[276px]' src={id.img} alt="" />
-                                <h3>{id.title}</h3>
-                                <p className='text-grey-200'>{id.description}</p>
-                                <div className='flex justify-between items-center' ><p>{id.price}</p> <span className='flex gap-2'><img src={Star} alt="" /><b>{id.raiting}</b></span></div>
+                    {data.map((product, index) => {
+                        return (
+                            <li key={index} className='shadow-servise-card rounded-[40px] p-9 space-y-3 max-w-[446px]'>
+                                <img className='mx-auto max-w-[276px]' src={product.img} alt="" />
+                                <h3>{product.title}</h3>
+                                <p className='text-grey-200'>{product.description}</p>
+                                <div className='flex justify-between items-center' ><p>{product.price}</p> <span className='flex gap-2'><img src={Star} alt="" /><b>{product.raiting}</b></span></div>
                             </li>
                         )
                     })
-                }
+                    }
                 </ul>
 
             </div>

@@ -12,12 +12,7 @@ html {
   font-family: "Inter", sans-serif;
 }
 
-<<<<<<< HEAD
-=======
 
-
-
->>>>>>> origin/kamron
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -52,7 +47,7 @@ html {
   }
 
   .icon-btn-sm {
-    @apply w-14 h-14 bg-green-[#EDFFEF] flex justify-center items-center;
+    @apply w-14 h-14 bg-grey-100 hover:bg-green-300 text-[#EDFFEF] flex justify-center items-center;
   }
 
   .icon-btn-md {
@@ -63,4 +58,8 @@ html {
 /* other */
 .subtitle {
   @apply text-red text-xl font-bold;
+}
+
+.container {
+  @apply max-w-1400 ;
 }
