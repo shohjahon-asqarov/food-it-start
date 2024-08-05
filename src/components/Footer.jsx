@@ -23,10 +23,10 @@ const Footer = () => {
                             Useful links
                         </p> <br />
                         <ul className='space-y-3'>
-                            <li>About Us</li>
-                            <li>Events</li>
-                            <li>Blogs</li>
-                            <li>FAQ</li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">FAQ</a></li>
                         </ul>
                     </div>
                     {/* 3 */}
@@ -35,10 +35,10 @@ const Footer = () => {
                             Main Menu
                         </p> <br />
                         <ul className='space-y-3'>
-                            <li>Home</li>
-                            <li>Offers</li>
-                            <li>Menus</li>
-                            <li>Reservation</li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Offers</a></li>
+                            <li><a href="#">Menus</a></li>
+                            <li><a href="#">Reservation</a></li>
                         </ul>
                     </div>
                     {/* 4 */}
@@ -47,9 +47,9 @@ const Footer = () => {
                             Contact Us
                         </p> <br />
                         <ul className='space-y-3'>
-                            <li>example@email.com</li>
-                            <li>+64 958 248 966</li>
-                            <li>Social media</li>
+                            <li><a href="#">example@email.com</a></li>
+                            <li><a href="#">+64 958 248 966</a></li>
+                            <li><a href="#">Social media</a></li>
                         </ul>
                     </div>
                 </div>
