@@ -11,11 +11,11 @@ import {
 const Hero = () => {
   return (
     <section>
-      <div className="container grid grid-cols-2 justify-between items-center">
+      <div className="container md:grid grid-cols-2 justify-between items-center">
 
         {/* Hero => left */}
         <div className="space-y-12">
-          <h1 className="leading-[90px]">
+          <h1 className="lg:leading-[90px]">
             Dive into Delights Of Delectable{" "}
             <span className="text-green-300">Food</span>
           </h1>

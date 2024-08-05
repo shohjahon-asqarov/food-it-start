@@ -64,5 +64,5 @@ html {
 }
 
 .container {
-  @apply max-w-1400 ;
+  @apply max-w-1400 px-5;
 }
