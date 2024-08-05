@@ -3,7 +3,7 @@ import { FLogo, IphoneIcons, NavLogo, SearchIcons, ShoppingIcons } from '../asse
 
 const Navbar = () => {
   return (
-    <header className='py-6 sticky top-0 z-10 bg-white bg-opacity-90'>
+    <header className='py-6 sticky top-0 z-[100] bg-white'>
         <div className="container flex items-center justify-between">
             
             {/* Nav => Logo */}
